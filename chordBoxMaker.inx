@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- # Extension para Inkscape creada por Marcos Feijoo www.ukelab.es
+     # Usa y comparte libremente 
+-->
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <_name>Chord Box Maker</_name>
+  <id>org.ekips.filter.chordboxmaker</id>
+  <dependency type="executable" location="extensions">chordBoxMaker.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+   <param name="tab" type="notebook">
+	  	<page name="tab1" _gui-text="Box Maker">
+			  <_param name="titPagina" type="description">Chord Box Maker</_param>
+			  
+			  <param name="trasteCero" type="boolean" _gui-text="Traste cero más grueso">true</param>
+			  
+			  <param name="numTrastes" type="enum" _gui-text="N de trastes">
+				<item value="3">3</item>
+				<item value="4">4</item>
+				<item value="5">5</item> 
+				<item value="6">6</item>  
+				<item value="7">7</item> 
+				<item value="8">8</item> 
+				<item value="9">9</item> 
+				<item value="10">10</item> 
+				<item value="11">11</item> 
+				<item value="12">12</item> 				
+			  </param>   
+			  
+			  <param name="numCuerdas" type="enum" _gui-text="N de cuerdas">
+				<item value="2">2</item>
+				<item value="3">3</item>
+				<item value="4">4</item> 
+				<item value="5">5</item>  
+				<item value="6">6</item>  
+				<item value="7">7</item>  
+				<item value="8">8</item>  	
+			  </param>  
+			  
+				<param name="tamCaja" type="enum" _gui-text="Tam de caja">
+				<item value="10">10</item>
+				<item value="20">20</item>
+				<item value="30">30</item>
+				<item value="40">40</item> 
+				<item value="50">50</item>  
+				<item value="100">100</item>  
+				<item value="200">200</item>  
+				<item value="300">300</item>  	
+			  </param> 
+
+			<param name="anchoLinea" type="enum" _gui-text="Ancho de linea">				
+				<item value="2">2</item>
+				<item value="4">4</item> 				  
+				<item value="6">6</item>  				
+				<item value="8">8</item> 
+				<item value="10">10</item> 
+			</param> 
+			<param name="impAyuda" type="boolean" _gui-text="Imprimir ayuda">true</param>
+
+		</page>
+    
+     
+	    	<page name="tab2" _gui-text="Info">
+			<_param name="titPagina" type="description">Chord Box Maker</_param>			
+			<_param name="titPagina" type="description">Usa y comparte esta caja para anotar tus acordes y escalas. en tu ukelele, bajo, guitarra, timple, cuatro, mandolina ...</_param>
+			<_param name="titPagina" type="description">v1.0 Feb 2015</_param>
+			<_param name="titPagina" type="description">info@ukelab.es</_param>
+			<_param name="titPagina" type="description">www.ukelab.es</_param>
+		</page>      
+    </param>
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+       <submenu _name="Ukelab"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">chordBoxMaker.py</command>
+  </script>
+</inkscape-extension>
