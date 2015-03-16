@@ -113,7 +113,7 @@ class chordBoxMakerEffect(inkex.Effect):
 		draw_SVG_circle(tc*0.30, 0, -tc, al, 'CentreDot', 'circulo', grp)
 		
 		if ia == 'true':
-			texto="Usa este caja gŕafico para anotar acordes y escalas en"
+			texto="Usa este gŕafico para anotar acordes y escalas en"
 			texto2="tu ukelele, bajo, guitarra, timple, cuatro, mandolina ..."
 			texto3="www.ukelab.es - info@ukelab.es"
 			draw_SVG_label_centred(tc, tc*(nt+1), texto, tc/3, 'texto', grp)
