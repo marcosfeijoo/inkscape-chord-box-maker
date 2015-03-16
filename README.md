@@ -9,7 +9,5 @@ Puedes elegir:
 -Ancho de la linea (de 2 a 10)
 -Generar texto de ayuda  (si/no)
 
-Instalación
-Copiar los archivos a la carpeta extensions de tu inkscape
+Comentarios a info@ukelab.es - www.ukelab.es
 
-Comentarios a info@ukelab.es
